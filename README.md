@@ -1,11 +1,11 @@
 # Script instalação programas
 
-## Foco ***android***
+Foco ***android***
 
 ## Modo de exucução
 
 No terminal ou termux
-ˋˋˋbash
+```bash
 ./instalacao.sh
-ˋˋˋ
+```
 
