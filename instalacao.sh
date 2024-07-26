@@ -17,7 +17,7 @@ DIRETORIO_DOWNLOADS="$HOME/Downloads/programas"
 
 # Atualizando pack e repositórios
 apt_update(){
-  sudo apt update && sudo apt upgrade -y
+  apt update && apt upgrade -y
 }
 
 echo " "
