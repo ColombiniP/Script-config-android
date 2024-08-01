@@ -10,6 +10,8 @@ URL_GOOGLE_CHROME="https://dl.google.com/linux/direct/google-chrome-stable_curre
 
 URL_FDROID="https://f-droid.org/F-Droid.apk"
 
+URL_BAT_64="https://github.com/sharkdp/bat/releases/download/v0.24.0/bat-musl_0.24.0_amd64.deb"
+
 ##DIRETÓRIOS E ARQUIVOS
 
 DIRETORIO_DOWNLOADS="$HOME/Downloads/programas"
@@ -48,6 +50,9 @@ install_externo() {
   # wget -c "$URL_GOOGLE_CHROME" -p "$DIRETORIO_DOWNLOADS"
   
   wget -c "$URL_FDROID" -p "$DIRETORIO_DOWNLOADS"
+  wget -c "$URL_BAT_64" -P "$DIRETORIO_DOWNLOADS" ## ubuntu
+
+  sudo dpkg -i bat-musl_0.24.0_amd64.deb -y
 }
 
 ## Finalização, atualização e limpeza##
